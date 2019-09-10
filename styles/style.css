@@ -1,0 +1,768 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "SansRegular";
+  src: url("../fonts/IBMPlexSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "SansSemibold";
+  src: url("../fonts/IBMPlexSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "MonoRegular";
+  src: url("../fonts/IBMPlexMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: "MonoMedium";
+  src: url("../fonts/IBMPlexMono-Medium.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+h1,
+h2 {
+  font-family: "SansRegular", Arial, Helvetica, sans-serif;
+  font-size: 2.25rem;
+  line-height: 2.62‬5rem;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 0 auto;
+  letter-spacing: 0;
+  font-weight: normal;
+}
+
+p {
+  font-family: "MonoRegular", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.contenedorbtn {
+  padding: 0 5%;
+}
+
+.contenedorbtn .btn {
+  font-family: "MonoMedium", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  background: #00F3BB;
+  padding: 13px 0;
+  text-align: center;
+}
+
+.contenedorbtn .btn a {
+  text-decoration: none;
+  color: #060A24;
+}
+
+.contenedorbtn .btn a:active {
+  color: #fff;
+}
+
+.contenedorbtn .btn a:hover {
+  color: #fff;
+}
+
+.contenedorbtn .btn:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
+
+img {
+  vertical-align: top;
+}
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 0.8%;
+  min-height: 2.75rem;
+  padding: 10px 5%;
+  z-index: 2;
+  background: #fff;
+  -webkit-box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+header img {
+  height: 1.5rem;
+}
+
+header nav ul {
+  visibility: hidden;
+  position: absolute;
+  top: 2.75rem;
+  overflow: hidden;
+  max-height: 0px;
+  -webkit-transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
+}
+
+input[type=checkbox]:checked ~ ul {
+  visibility: visible;
+  position: absolute;
+  top: 2.75rem;
+  right: 0;
+  list-style: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #0000FF;
+  max-height: 240px;
+  width: 100%;
+}
+
+input[type=checkbox]:checked ~ ul li {
+  padding: 16px;
+}
+
+input[type=checkbox]:checked ~ ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "MonoRegular", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.755rem;
+}
+
+.menu {
+  display: block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  padding-top: 3px;
+}
+
+.menu input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+  position: absolute;
+}
+
+.menu span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin-bottom: 4px;
+  position: relative;
+  background: #060A24;
+  border-radius: 3px;
+  z-index: 1;
+  -webkit-transform-origin: 3px 0px;
+          transform-origin: 3px 0px;
+  -webkit-transition: opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.menu span:first-child {
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.menu span:nth-last-child(2) {
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+}
+
+.menu input:checked ~ span {
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translate(2px, 1px);
+          transform: rotate(45deg) translate(2px, 1px);
+}
+
+.menu input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.menu input:checked ~ span:nth-last-child(2) {
+  -webkit-transform: rotate(-45deg) translate(-1px, 3px);
+          transform: rotate(-45deg) translate(-1px, 3px);
+}
+
+.titulo {
+  height: 5.6%;
+  padding-top: 44px;
+  margin-bottom: 2.5rem;
+}
+
+.titulo h1 {
+  margin-top: 1.8125rem;
+}
+
+.titulo h1 .separador {
+  display: block;
+}
+
+.titulo h1 .tachado {
+  text-decoration: line-through;
+}
+
+.titulo h1 .blue {
+  color: #0000FF;
+}
+
+.titulo p {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 2.25rem;
+}
+
+.episodios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  min-height: 1000px;
+}
+
+.episodios .bg {
+  position: absolute;
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  min-height: 900px;
+  -webkit-transform: skewY(-3deg);
+          transform: skewY(-3deg);
+  width: 100%;
+}
+
+.episodios h2 {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.episodios .audio {
+  z-index: 1;
+}
+
+.episodios .audio iframe {
+  width: 93%;
+  height: 225px;
+  display: block;
+  margin: auto;
+  margin-bottom: -60px;
+}
+
+.nosotros {
+  margin-top: -11rem;
+  min-height: 850px;
+  margin-bottom: 3.375rem;
+}
+
+.nosotros img {
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+.nosotros h2 {
+  margin-top: 1.6875rem;
+  margin-bottom: 0.5rem;
+}
+
+.nosotros h2 span {
+  display: block;
+}
+
+.entrevistas h2 {
+  margin-bottom: 0.875rem;
+}
+
+.entrevistas img {
+  width: 100%;
+}
+
+.topicos {
+  margin-bottom: 1rem;
+}
+
+.topicos h2 {
+  margin-top: 3rem;
+  margin-bottom: 2.25rem;
+}
+
+.topicos div {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.topicos div img {
+  margin-bottom: 0.8125rem;
+}
+
+.topicos div p {
+  font-family: "SansSemibold", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.novedades {
+  overflow: hidden;
+  position: relative;
+  min-height: 341px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.novedades .trapezoid {
+  position: absolute;
+  top: 10%;
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  height: 100%;
+  -webkit-transform: skewY(-3deg);
+          transform: skewY(-3deg);
+  width: 100%;
+}
+
+.novedades h2 {
+  color: #fff;
+  z-index: 1;
+  text-align: center;
+  width: 90%;
+  margin-bottom: 2.25rem;
+}
+
+.novedades .contenedorbtn {
+  z-index: 1;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+}
+
+footer p {
+  margin: 1.5rem auto 1rem auto;
+}
+
+footer .social {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .social a {
+  text-decoration: none;
+  color: #060A24;
+}
+
+footer .social a:hover {
+  text-decoration: none;
+  color: #00F3BB;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+  .menu {
+    padding-top: 10px;
+  }
+  input[type=checkbox]:checked ~ ul {
+    max-height: 340px;
+  }
+  .episodios {
+    min-height: 600px;
+  }
+  .episodios .bg {
+    min-height: 600px;
+  }
+  .episodios .audio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .episodios .audio iframe {
+    width: 45%;
+    display: block;
+    margin: auto;
+    margin-bottom: -30px;
+  }
+  .titulo {
+    padding-top: 94px;
+  }
+  .titulo h1 .separador {
+    display: inline;
+  }
+  .titulo .contenedorbtn {
+    padding: 0 0 0 5%;
+  }
+  .titulo .contenedorbtn .btn {
+    display: inline-block;
+    padding: 16px 59px;
+  }
+  .nosotros {
+    min-height: 400px;
+    margin-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .nosotros img {
+    width: 32%;
+    height: 100%;
+  }
+  .nosotros .txt {
+    width: 65%;
+  }
+  .nosotros .txt h2 {
+    margin-top: 1.6875rem;
+    margin-bottom: 0.5rem;
+  }
+  .nosotros .txt h2 span {
+    display: inline-block;
+  }
+  .entrevistas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .entrevistas img {
+    width: 50%;
+    margin: 0;
+  }
+  .topicos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    margin-bottom: 0;
+    padding: 0 5%;
+  }
+  .topicos h2 {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 3.45rem;
+  }
+  .topicos div {
+    width: 25%;
+    margin-bottom: 2rem;
+  }
+  .topicos div img {
+    margin-bottom: 1.25rem;
+  }
+  .topicos div p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+  .novedades {
+    overflow: hidden;
+    position: relative;
+    min-height: 441px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .novedades .contenedorbtn {
+    margin: 0 auto;
+  }
+  .novedades .contenedorbtn .btn {
+    display: inline-block;
+    padding: 16px 59px;
+  }
+  footer {
+    min-height: 100px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: left;
+  }
+  footer p {
+    width: 45%;
+    margin: 0;
+    display: inline-block;
+    -ms-flex-item-align: left;
+        -ms-grid-row-align: left;
+        align-self: left;
+  }
+  footer .social {
+    width: 45%;
+    margin: 0;
+    padding-right: 5%;
+    -ms-flex-item-align: right;
+        -ms-grid-row-align: right;
+        align-self: right;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+    padding-left: 14%;
+    padding-right: 14%;
+  }
+  h2 {
+    font-size: 2.4rem;
+    line-height: 3.1rem;
+    padding-left: 14%;
+    padding-right: 14%;
+  }
+  p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    padding-left: 14%;
+  }
+  .btn {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+  header {
+    position: relative;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding-left: 7%;
+  }
+  header img {
+    height: 1.8rem;
+  }
+  header nav ul {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    right: 7%;
+    max-height: 100%;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background: #fff;
+    width: auto;
+  }
+  header nav ul li {
+    padding: 16px;
+  }
+  header nav ul li a {
+    text-decoration: none;
+    color: #060A24;
+    font-family: "MonoRegular", Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+  }
+  header nav ul li a:hover {
+    color: #00F3BB;
+  }
+  .menu input {
+    display: none;
+  }
+  .menu span {
+    display: none;
+  }
+  .titulo p {
+    width: 60%;
+    padding: 0 0 0 14%;
+  }
+  .titulo .contenedorbtn {
+    padding: 0 0 0 14%;
+    display: block;
+  }
+  .episodios {
+    min-height: 700px;
+  }
+  .episodios .bg {
+    min-height: 700px;
+  }
+  .episodios .audio {
+    padding: 0 6%;
+  }
+  .episodios .audio iframe {
+    width: 45%;
+  }
+  .nosotros {
+    padding: 0 17% 0 14%;
+  }
+  .nosotros img {
+    position: relative;
+    top: -4rem;
+    margin-right: 3.5rem;
+  }
+  .nosotros .txt {
+    width: 55%;
+  }
+  .nosotros .txt h2 {
+    margin-bottom: 1.2rem;
+    padding: 0;
+  }
+  .nosotros .txt p {
+    padding: 0;
+  }
+  .entrevistas img {
+    width: 33.3333%;
+  }
+  .topicos {
+    padding: 0 14%;
+  }
+  footer {
+    min-height: 100px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: left;
+  }
+  footer p {
+    width: 45%;
+    margin: 0;
+    display: inline-block;
+    -ms-flex-item-align: left;
+        -ms-grid-row-align: left;
+        align-self: left;
+    padding-left: 7%;
+  }
+  footer .social {
+    width: 30%;
+    margin: 0;
+    padding-right: 7%;
+    -ms-flex-item-align: right;
+        -ms-grid-row-align: right;
+        align-self: right;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  body {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  p {
+    padding-left: 14%;
+  }
+  header {
+    margin-top: 1rem;
+    min-width: 100px;
+  }
+  header nav ul li a {
+    font-size: 1rem;
+  }
+  .episodios {
+    min-height: 700px;
+  }
+  .episodios .bg {
+    position: absolute;
+    max-width: 60%;
+    margin: 0 auto;
+    min-height: 700px;
+  }
+  .nosotros img {
+    position: relative;
+    top: 0rem;
+  }
+  .nosotros .txt {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .novedades {
+    min-height: 500px;
+  }
+  .novedades .trapezoid {
+    top: 17%;
+  }
+  footer {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

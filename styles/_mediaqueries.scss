@@ -1,0 +1,320 @@
+@media screen and (min-width:768px) {
+    html {
+        font-size: 20px;
+    }
+    .menu {
+        padding-top: 10px;
+    }
+    input[type=checkbox]:checked~ul {
+        max-height: 340px;
+    }
+    .episodios {
+        min-height: 600px;
+        .bg {
+            min-height: 600px;
+        }
+        .audio {
+            display: flex;
+            flex-flow: row wrap;
+            iframe {
+                width: 45%;
+                display: block;
+                margin: auto;
+                margin-bottom: -30px;
+            }
+        }
+    }
+    .titulo {
+        padding-top: 94px;
+        h1 {
+            .separador {
+                display: inline;
+            }
+        }
+        .contenedorbtn{
+            padding: 0 0 0 5%;
+            .btn{
+                display: inline-block;
+                padding: 16px 59px;
+            }
+        }
+    }
+    .nosotros {
+        min-height: 400px;
+        margin-top: 2rem;
+        display: flex;
+        flex-flow: row wrap;
+        img {
+            width: 32%;
+            height: 100%;
+        }
+        .txt{
+            width: 65%;
+            h2 {
+                margin-top: 1.6875rem;
+                margin-bottom: 0.5rem;
+                span {
+                    display: inline-block;
+                }
+            }
+            
+        }
+    }
+    .entrevistas {
+        display: flex;
+        flex-flow: row wrap;
+        img {
+            width: 50%;
+            margin: 0;
+        }
+    }
+    .topicos {
+        display: flex;
+        flex-flow: row wrap;
+        margin-bottom: 0;
+        padding: 0 5%;
+            h2 {
+            width: 100%;
+            padding: 0;
+            margin-bottom: 3.45rem;
+        }
+        div {
+            width: 25%;
+            margin-bottom: 2rem;
+            img {
+                margin-bottom: 1.25rem;
+            }
+            p {
+                font-size: 0.8rem;
+                line-height: 1.2rem;
+            }
+        }
+    }
+    .novedades {
+        overflow: hidden;
+        position: relative;
+        min-height: 441px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        .contenedorbtn{
+            margin: 0 auto;
+            .btn{
+                display: inline-block;
+                padding: 16px 59px;
+            }
+        }
+    }
+    footer {
+        min-height: 100px;
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-content: center;
+        text-align: left;
+        p {
+            width: 45%;
+            margin: 0;
+            display:inline-block;
+            align-self: left;
+        }
+        .social {
+            width: 45%;
+            margin: 0;
+            padding-right: 5%;
+            align-self: right;
+        }
+    }
+}
+
+@media screen and (min-width:1000px) {
+    h1{
+        font-size: 3.2rem;
+        line-height: 4.2rem;
+        padding-left: 14%;
+        padding-right: 14%;
+    }
+    h2{
+        font-size: 2.4rem;
+        line-height: 3.1rem;
+        padding-left: 14%;
+        padding-right: 14%;
+    }
+    p {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        padding-left: 14%;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        line-height: 1.2rem; 
+    }
+
+    header {
+        position: relative;
+        box-shadow: none;
+        padding-left: 7%;
+        img {
+            height: 1.8rem;
+        }
+        nav {
+            ul {
+                visibility: visible;
+                position: absolute;
+                top: 0;
+                right: 7%;
+                max-height: 100%;
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                background: $colorTextoSecundario;
+                width: auto;
+                li {
+                    padding: 16px;
+                    a {
+                        text-decoration: none;
+                        color: $colorTextoPrimario;
+                        font-family: $font-familyMonoRegular;
+                        font-size: 0.8rem;
+                        line-height: 1.4rem;
+                    }
+                    a:hover{
+                        color:$colorSecundario;
+                    }
+                }  
+            }
+        }
+    }
+    .menu{
+        input {
+            display: none;
+        }
+        span {
+            display: none;
+        }
+    }         
+    .titulo {
+        p{
+            width: 60%;
+            padding: 0 0 0 14%;
+        }
+        .contenedorbtn{
+            padding: 0 0 0 14%;
+            display: block;
+        }
+    }
+    .episodios{
+        min-height: 700px;
+        .bg {
+            min-height: 700px;
+        }
+        .audio {
+            padding: 0 6%;
+            iframe {
+                width: 45%;
+            }
+        }
+    }
+    .nosotros {
+        padding: 0 17% 0 14%;
+        img {
+            position: relative;
+            top: -4rem;
+            margin-right: 3.5rem;
+        }
+        .txt{
+            width: 55%;
+            h2 {
+                margin-bottom: 1.2rem;
+                padding: 0;
+            }
+            p{
+                padding: 0;
+            }          
+        }
+    }
+    .entrevistas {
+        img {
+            width: 33.3333%;
+        }
+    }
+    .topicos {
+        padding: 0 14%;
+    }
+    footer {
+        min-height: 100px;
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-content: center;
+        text-align: left;
+        p {
+            width: 45%;
+            margin: 0;
+            display:inline-block;
+            align-self: left;
+            padding-left: 7%;
+        }
+        .social {
+            width: 30%;
+            margin: 0;
+            padding-right: 7%;
+            align-self: right;
+        }
+    }
+}
+
+
+@media screen and (min-width:1800px) {
+    body{
+        max-width: 60%;
+        margin: 0 auto;
+    }
+    p {
+        padding-left: 14%;
+    }
+    header {
+        margin-top: 1rem;
+        min-width: 100px;
+        nav {
+            ul {
+                li {
+                    a {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    .episodios {
+        min-height: 700px;
+        .bg {
+            position: absolute;
+            max-width: 60%;
+            margin: 0 auto;
+            min-height: 700px;
+        }
+    }
+    .nosotros {
+        img {
+            position: relative;
+            top: 0rem;
+        }
+        .txt{
+            align-self: center;        
+        }
+    }
+    .novedades {
+        min-height: 500px;
+        .trapezoid {
+            top: 17%;
+        }
+    }
+    footer {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+}

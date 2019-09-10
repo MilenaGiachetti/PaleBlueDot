@@ -1,0 +1,36 @@
+//paleta de colores
+$colorPrimario: #0000FF;
+$colorPrimarioOscuro: #0000A3;
+$colorSecundario: #00F3BB;
+$colorTextoPrimario: #060A24;
+$colorTextoSecundario: #fff;
+$colorTransicionBtnPrimario: #0000FE;
+$colorTransicionBtnSecundario: #00F0B8;
+$colorTransicionClaro: #0000FE;
+$colorTransicionOscuro: #00F0B8;
+
+@font-face{
+    font-family: "SansRegular";
+    src: url('../fonts/IBMPlexSans-Regular.ttf');
+}
+
+@font-face{
+    font-family: "SansSemibold";
+    src: url('../fonts/IBMPlexSans-SemiBold.ttf');
+}
+
+@font-face{
+    font-family: "MonoRegular";
+    src: url('../fonts/IBMPlexMono-Regular.ttf');
+}
+
+@font-face{
+    font-family: "MonoMedium";
+    src: url('../fonts/IBMPlexMono-Medium.ttf');
+}
+
+//fuentes
+$font-familySansRegular: "SansRegular",Arial, Helvetica, sans-serif;
+$font-familySansSemibold: "SansSemibold",Arial, Helvetica, sans-serif;
+$font-familyMonoRegular: "MonoRegular",Arial, Helvetica, sans-serif;
+$font-familyMonoMedium: "MonoMedium",Arial, Helvetica, sans-serif;
