@@ -168,9 +168,15 @@ input[type=checkbox]:checked~ul {
     transform: rotate(-45deg) translate(-1px, 3px);
 }
 
-#episodios, #nosotros, #entrevistas, #topicos {
+#entrevistas{
     padding-top: 50px;
     margin-top: -50px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+}
+#nosotros, #topicos {
+    padding-top: 20px;
+    margin-top: -20px;
     -webkit-background-clip: content-box;
     background-clip: content-box;
 }
