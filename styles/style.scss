@@ -45,7 +45,6 @@ p {
         a {
             text-decoration: none;
             color: $colorTextoPrimario;
-            //no parecen tener el mismo font-weight
             &:active {
                 color: $colorTextoSecundario;
             }
@@ -174,9 +173,15 @@ input[type=checkbox]:checked~ul {
     -webkit-background-clip: content-box;
     background-clip: content-box;
 }
-#nosotros, #topicos {
+#nosotros {
     padding-top: 20px;
     margin-top: -20px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+}
+#topicos {
+    padding-top: 10px;
+    margin-top: -10px;
     -webkit-background-clip: content-box;
     background-clip: content-box;
 }
@@ -241,6 +246,7 @@ input[type=checkbox]:checked~ul {
     margin-bottom: 3.375rem;
     img {
         width: 100%;
+        height: auto;
         z-index: 1;
         position: relative;
     }
@@ -259,6 +265,7 @@ input[type=checkbox]:checked~ul {
     }
     img {
         width: 100%;
+        height: auto;
     }
 }
 
@@ -286,6 +293,7 @@ input[type=checkbox]:checked~ul {
     overflow: hidden;
     position: relative;
     min-height: 341px;
+    height: 340px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; 
@@ -311,10 +319,11 @@ input[type=checkbox]:checked~ul {
         z-index: 1;
         text-align: center;
         width: 90%;
-        margin-bottom: 2.25rem;
+        margin-bottom: 2.25rem;      
     }
     .contenedorbtn{
         z-index: 1;
+        text-align: center;
     }
 }
 

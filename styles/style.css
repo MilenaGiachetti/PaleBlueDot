@@ -220,9 +220,15 @@ input[type=checkbox]:checked ~ ul li a {
   background-clip: content-box;
 }
 
-#nosotros, #topicos {
+#nosotros {
   padding-top: 20px;
   margin-top: -20px;
+  background-clip: content-box;
+}
+
+#topicos {
+  padding-top: 10px;
+  margin-top: -10px;
   background-clip: content-box;
 }
 
@@ -305,6 +311,7 @@ input[type=checkbox]:checked ~ ul li a {
 
 .nosotros img {
   width: 100%;
+  height: auto;
   z-index: 1;
   position: relative;
 }
@@ -324,6 +331,7 @@ input[type=checkbox]:checked ~ ul li a {
 
 .entrevistas img {
   width: 100%;
+  height: auto;
 }
 
 .topicos {
@@ -354,6 +362,7 @@ input[type=checkbox]:checked ~ ul li a {
   overflow: hidden;
   position: relative;
   min-height: 341px;
+  height: 340px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,6 +397,7 @@ input[type=checkbox]:checked ~ ul li a {
 
 .novedades .contenedorbtn {
   z-index: 1;
+  text-align: center;
 }
 
 footer {
@@ -480,7 +490,7 @@ footer .social a:hover {
   }
   .nosotros img {
     width: 32%;
-    height: 100%;
+    height: auto;
   }
   .nosotros .txt {
     width: 65%;
@@ -503,6 +513,7 @@ footer .social a:hover {
   }
   .entrevistas img {
     width: 50%;
+    height: auto;
     margin: 0;
   }
   .topicos {
@@ -555,21 +566,26 @@ footer .social a:hover {
     padding: 16px 59px;
   }
   footer {
+    width: 100%;
     min-height: 100px;
+    height: 99px;
     position: relative;
+    text-align: left;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-direction: row;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    text-align: left;
+            flex-direction: row;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   footer p {
     width: 45%;
@@ -696,6 +712,7 @@ footer .social a:hover {
   }
   .entrevistas img {
     width: 33.3333%;
+    height: auto;
   }
   .topicos {
     padding: 0 14%;
