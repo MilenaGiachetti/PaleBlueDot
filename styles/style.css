@@ -115,19 +115,12 @@ header img {
 }
 
 header nav ul {
-  visibility: hidden;
   position: absolute;
   top: 2.75rem;
   overflow: hidden;
-  max-height: 0px;
-  -webkit-transition: max-height 0.5s ease-in-out;
-  transition: max-height 0.5s ease-in-out;
-}
-
-input[type=checkbox]:checked ~ ul {
-  visibility: visible;
-  position: absolute;
-  top: 2.75rem;
+  height: 0px;
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
   right: 0;
   list-style: none;
   -webkit-box-orient: vertical;
@@ -135,20 +128,30 @@ input[type=checkbox]:checked ~ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   background: #0000FF;
-  max-height: 240px;
   width: 100%;
 }
 
-input[type=checkbox]:checked ~ ul li {
-  padding: 16px;
+header nav ul li {
+  position: relative;
 }
 
-input[type=checkbox]:checked ~ ul li a {
+header nav ul li a {
   text-decoration: none;
   color: #fff;
   font-family: "MonoRegular", Arial, Helvetica, sans-serif;
   font-size: 1rem;
+  padding: 16px;
   line-height: 1.755rem;
+  display: block;
+  position: relative;
+}
+
+input[type="checkbox"]:checked ~ ul {
+  height: 240px;
+  transition: height 0.5s ease-in-out;
+  -moz-transition: height 0.5s ease-in-out;
+  -o-transition: height 0.5s ease-in-out;
+  -webkit-transition: height 0.5s ease-in-out;
 }
 
 .menu {
@@ -441,7 +444,7 @@ footer .social a:hover {
     padding-top: 10px;
   }
   input[type=checkbox]:checked ~ ul {
-    max-height: 340px;
+    height: 268px;
   }
   .episodios {
     min-height: 600px;
@@ -637,7 +640,7 @@ footer .social a:hover {
     height: 1.8rem;
   }
   header nav ul {
-    visibility: visible;
+    height: 80px;
     position: absolute;
     top: 0;
     right: 7%;
@@ -653,15 +656,13 @@ footer .social a:hover {
     background: #fff;
     width: auto;
   }
-  header nav ul li {
-    padding: 16px;
-  }
   header nav ul li a {
     text-decoration: none;
     color: #060A24;
     font-family: "MonoRegular", Arial, Helvetica, sans-serif;
     font-size: 0.8rem;
     line-height: 1.4rem;
+    padding: 16px;
   }
   header nav ul li a:hover {
     color: #00F3BB;

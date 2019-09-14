@@ -1,107 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pale Blue Dot</title>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/99b27c8ee8.js"></script>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-    <header>
-        <img src="images/logo.svg" alt="Logo de pale blue dot" class="logo">
-        <nav>
-            <div class="menu">
-                <input type="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul>
-                    <li><a href="#episodios">EPISODIOS</a></li>
-                    <li><a href="#nosotros">NOSOTROS</a></li>
-                    <li><a href="#entrevistas">ENTREVISTAS</a></li>
-                    <li><a href="#topicos">TÓPICOS</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="titulo">
-            <h1><span class="separador">Hello <span class="tachado">world</span></span> pale blue dot<span class="blue">.</span></h1>
-            <p>Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
-            <div class="contenedorbtn">
-                <div class="btn">
-                    <a href="#nosotros">CONOCÉ MÁS</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Pale Blue Dot</title>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+        <script src="https://kit.fontawesome.com/99b27c8ee8.js"></script>
+        <link rel="stylesheet" href="styles/style.css" />
+    </head>
+    <body>
+        <header>
+            <img
+                src="images/logo.svg"
+                alt="Logo de pale blue dot"
+                class="logo"
+            />
+            <nav>
+                <div class="menu">
+                    <input type="checkbox" id="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul>
+                        <li><a href="#episodios">EPISODIOS</a></li>
+                        <li><a href="#nosotros">NOSOTROS</a></li>
+                        <li><a href="#entrevistas">ENTREVISTAS</a></li>
+                        <li><a href="#topicos">TÓPICOS</a></li>
+                    </ul>
                 </div>
-            </div>
-        </section>
-        <section class="episodios" id="episodios">
-            <div class="bg"></div>
-            <h2>Episodios</H2>
-            <div class="audio">
-                <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-        </section>
-        <section class="nosotros">
-            <img src="images/phone.png" alt="teléfono con noticia titulada: the Secret History of Women in Coding">
-            <div class="txt" id="nosotros">
-                <h2><span>De dónde</span> venimos</h2>
-                <p>Our posturings, our imagined self-importance, the delusion tha we have some priviliged position in the Universe, are challenged by this point of pale light.</p><br>
-                <p>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
-            </div>
-        </section>
-        <section class="entrevistas" id="entrevistas">
-            <h2>Invitadas/os estelares</h2>
-            <img src="images/hopper.png" alt="Foto de Grace Murray Hopper, científica de la computación y militar estadounidense ">
-            <img src="images/bouman.png" alt="Foto de Katie Bouman, desarrolladora del algoritmo que realizó la primera imagen de un agujero negro, junto a los discos duros que contienen toda la data">
-            <img src="images/hamilton.png" alt="Foto de Margaret Hamilton junto al código para la misión espacial Apolo 11 que llegó a la luna">
-            <img src="images/univac.png" alt="Foto de una computadora E.R.A Univac 1103 en la década de los cincuenta">
-            <img src="images/eniac.png" alt="Foto de peradoras de computadora con la Eniac, una de las primeras computadoras de propósito general del mundo">
-            <img src="images/kare.png" alt="Foto de Susan Kare, artista y diseñadora gráfica estadounidense">
-        </section>
-        <section class="topicos" id="topicos">
-            <h2>Algunos de nuestros temas</h2>
-            <div class="trabajo">
-                <img src="images/icon1.svg" alt="dibujo  de varios archivos dirigiéndose al mismo lugar representando trabajo remoto">
-                <p class="subt">Trabajo remoto</p>
-            </div>
-            <div class="repensando">
-                <img src="images/icon2.svg" alt="dibujo representando el repensar la programación">
-                <p class="subt">Repensando la programación</p>
-            </div>
-            <div class="bases">
-                <img src="images/icon3.svg" alt="dibujo de una computadora con unas líneas de código escritas representando las bases del código">
-                <p class="subt">Bases del código</p>
-            </div>
-            <div class="seguridad">
-                <img src="images/icon4.svg" alt="dibujo representando seguridad informática">
-                <p class="subt">Seguridad informática</p>
-            </div>
-        </section>
-        <section class="novedades">
-            <div class="trapezoid"></div>
-            <h2>¿Querés las últimas novedades?</h2>
-            <div class="contenedorbtn">
-                <div class="btn">
-                    <a href="#episodios">ESCUCHÁ LOS EPISODIOS</a>
+            </nav>    
+        </header>
+        <main>
+            <section class="titulo">
+                <h1>
+                    <span class="separador">Hello <span class="tachado">world</span></span> pale blue dot<span class="blue">.</span>
+                </h1>
+                <p>
+                    Un podcast que explora el mundo de la programación. Nuevos
+                    episodios, todos los jueves cada 15 días.
+                </p>
+                <div class="contenedorbtn">
+                    <div class="btn">
+                        <a href="#nosotros">CONOCÉ MÁS</a>
+                    </div>
                 </div>
+            </section>
+            <section class="episodios" id="episodios">
+                <div class="bg"></div>
+                <h2>Episodios</h2>
+                <div class="audio">
+                    <iframe
+                        src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt"
+                        width="300"
+                        height="380"
+                        frameborder="0"
+                        allowtransparency="true"
+                        allow="encrypted-media"
+                    ></iframe>
+                    <iframe
+                        src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"
+                        width="300"
+                        height="380"
+                        frameborder="0"
+                        allowtransparency="true"
+                        allow="encrypted-media"
+                    ></iframe>
+                    <iframe
+                        src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"
+                        width="300"
+                        height="380"
+                        frameborder="0"
+                        allowtransparency="true"
+                        allow="encrypted-media"
+                    ></iframe>
+                    <iframe
+                        src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ"
+                        width="300"
+                        height="380"
+                        frameborder="0"
+                        allowtransparency="true"
+                        allow="encrypted-media"
+                    ></iframe>
+                </div>
+            </section>
+            <section class="nosotros">
+                <img
+                    src="images/phone.png"
+                    alt="teléfono con noticia titulada: the Secret History of Women in Coding"
+                />
+                <div class="txt" id="nosotros">
+                    <h2><span>De dónde</span> venimos</h2>
+                    <p>
+                        Our posturings, our imagined self-importance, the
+                        delusion tha we have some priviliged position in the
+                        Universe, are challenged by this point of pale light.
+                    </p>
+                    <br />
+                    <p>
+                        Our planet is a lonely speck in the great enveloping
+                        cosmic dark. In our obscurity, in all this vastness,
+                        there is no hint that help will come from elsewhere to
+                        save us from ourselves.
+                    </p>
+                </div>
+            </section>
+            <section class="entrevistas" id="entrevistas">
+                <h2>Invitadas/os estelares</h2>
+                <img
+                    src="images/hopper.png"
+                    alt="Foto de Grace Murray Hopper, científica de la computación y militar estadounidense "
+                />
+                <img
+                    src="images/bouman.png"
+                    alt="Foto de Katie Bouman, desarrolladora del algoritmo que realizó la primera imagen de un agujero negro, junto a los discos duros que contienen toda la data"
+                />
+                <img
+                    src="images/hamilton.png"
+                    alt="Foto de Margaret Hamilton junto al código para la misión espacial Apolo 11 que llegó a la luna"
+                />
+                <img
+                    src="images/univac.png"
+                    alt="Foto de una computadora E.R.A Univac 1103 en la década de los cincuenta"
+                />
+                <img
+                    src="images/eniac.png"
+                    alt="Foto de peradoras de computadora con la Eniac, una de las primeras computadoras de propósito general del mundo"
+                />
+                <img
+                    src="images/kare.png"
+                    alt="Foto de Susan Kare, artista y diseñadora gráfica estadounidense"
+                />
+            </section>
+            <section class="topicos" id="topicos">
+                <h2>Algunos de nuestros temas</h2>
+                <div class="trabajo">
+                    <img
+                        src="images/icon1.svg"
+                        alt="dibujo  de varios archivos dirigiéndose al mismo lugar representando trabajo remoto"
+                    />
+                    <p class="subt">Trabajo remoto</p>
+                </div>
+                <div class="repensando">
+                    <img
+                        src="images/icon2.svg"
+                        alt="dibujo representando el repensar la programación"
+                    />
+                    <p class="subt">Repensando la programación</p>
+                </div>
+                <div class="bases">
+                    <img
+                        src="images/icon3.svg"
+                        alt="dibujo de una computadora con unas líneas de código escritas representando las bases del código"
+                    />
+                    <p class="subt">Bases del código</p>
+                </div>
+                <div class="seguridad">
+                    <img
+                        src="images/icon4.svg"
+                        alt="dibujo representando seguridad informática"
+                    />
+                    <p class="subt">Seguridad informática</p>
+                </div>
+            </section>
+            <section class="novedades">
+                <div class="trapezoid"></div>
+                <h2>¿Querés las últimas novedades?</h2>
+                <div class="contenedorbtn">
+                    <div class="btn">
+                        <a href="#episodios">ESCUCHÁ LOS EPISODIOS</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>© 2019— Hello blue pale dot</p>
+            <div class="social">
+                <a target="_blank" href="http://www.spotify.com"><i class="fab fa-facebook"></i></a>
+                <a target="_blank" href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <a target="_blank" href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                <a target="_blank" href="http://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a target="_blank" href="http://www.telegram.com"><i class="fab fa-telegram"></i></a>
             </div>
-        </section>
-    </main>
-    <footer>
-        <p>© 2019— Hello blue pale dot</p>
-        <div class="social">
-            <a target="_blank" href="http://www.spotify.com"><i class="fab fa-facebook"></i></a>
-            <a target="_blank" href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
-            <a target="_blank" href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
-            <a target="_blank" href="http://www.facebook.com"><i class="fab fa-facebook"></i></a>
-            <a target="_blank" href="http://www.telegram.com"><i class="fab fa-telegram"></i></a>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>

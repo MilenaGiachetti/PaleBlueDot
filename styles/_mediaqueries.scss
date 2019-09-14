@@ -6,7 +6,7 @@
         padding-top: 10px;
     }
     input[type=checkbox]:checked~ul {
-        max-height: 340px;
+        height: 268px;
     }
     .episodios {
         min-height: 600px;
@@ -173,7 +173,7 @@
         }
         nav {
             ul {
-                visibility: visible;
+                height: 80px;
                 position: absolute;
                 top: 0;
                 right: 7%;
@@ -184,13 +184,13 @@
                 background: $colorTextoSecundario;
                 width: auto;
                 li {
-                    padding: 16px;
                     a {
                         text-decoration: none;
                         color: $colorTextoPrimario;
                         font-family: $font-familyMonoRegular;
                         font-size: 0.8rem;
                         line-height: 1.4rem;
+                        padding: 16px;
                     }
                     a:hover{
                         color:$colorSecundario;
