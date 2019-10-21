@@ -55,8 +55,8 @@ p {
         &:hover {
             background-image: linear-gradient(
                 225deg,
-                $colorTransicionBtnPrimario 0%,
-                $colorTransicionBtnSecundario 100%
+                $colorPrimario 0%,
+                $colorSecundario 100%
             );
         }
     }
@@ -76,7 +76,7 @@ header {
     height: 0.8%;
     min-height: 2.75rem;
     padding: 10px 5%;
-    z-index: 2;
+
     background: $colorTextoSecundario;
     box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.3);
     img {
