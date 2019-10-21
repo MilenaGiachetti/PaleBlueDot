@@ -67,6 +67,7 @@ img {
 
 //formato específico
 header {
+    z-index: 2;
     width: 100%;
     display: flex;
     position: fixed;
@@ -132,7 +133,6 @@ input[type="checkbox"]:checked ~ ul {
     width: 40px;
     height: 32px;
     opacity: 0;
-    z-index: 2;
     -webkit-touch-callout: none;
     position: absolute;
 }
